@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Thomas</string>
+    <string name="name_and_age">Томас, 1.5 года</string>
+    <string name="hobby">Хобби:</string>
+    <string name="hobby_1">Точить когти об диван</string>
+    <string name="hobby_2">Рвать бумажки</string>
+    <string name="hobby_3">Открывать шкафы</string>
+    <string name="hobby_4">Обниматься с людьми</string>
 </resources>

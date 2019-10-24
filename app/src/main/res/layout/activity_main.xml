@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -22,7 +22,8 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/thomas"/>
+                android:src="@drawable/thomas"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:text="@string/name_and_age"
@@ -36,129 +37,42 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_marginTop="20dp">
 
-            <ImageView
-                android:id="@+id/cat"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/cat"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/hobby"
+            style="@style/drawable_cat"
+            android:drawableStart="@drawable/cat"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hobby"
-                android:textSize="40sp"
-                android:fontFamily="sans-serif"
-                android:textColor="@android:color/black"
-                android:gravity="center"
-                android:layout_toEndOf="@id/cat"/>
-
-        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="10dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/hobby_1"
+                style="@style/drawable_paw"
+                android:drawableStart="@drawable/paw"/>
 
-                <include layout="@layout/paws_img" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/hobby_2"
+                style="@style/drawable_paw"
+                android:drawableStart="@drawable/paw"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobby_1"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="@android:color/black"
-                    android:gravity="center_vertical"
-                    android:layout_toRightOf="@id/paw"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/hobby_3"
+                style="@style/drawable_paw"
+                android:drawableStart="@drawable/paw"/>
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical">
-
-                <include layout="@layout/paws_img" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobby_2"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="@android:color/black"
-                    android:gravity="center_vertical"
-                    android:layout_toRightOf="@id/paw"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical">
-
-                <include layout="@layout/paws_img" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobby_3"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:layout_toRightOf="@id/paw"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical">
-
-                <include layout="@layout/paws_img"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hobby_4"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="@android:color/black"
-                    android:gravity="bottom"
-                    android:layout_toRightOf="@id/paw"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/hobby_4"
+                style="@style/drawable_paw"
+                android:drawableStart="@drawable/paw"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
